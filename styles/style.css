@@ -55,7 +55,7 @@
 .menu3{
     color: rgba(5, 212, 223, 1);
 }
-.menu4{
+.violent{
     color: rgba(93, 88, 239, 1);
 }
 .btn{
@@ -103,12 +103,77 @@ hr.line{
 .header-image img{
     width: 100%;
 }
+/*body part curriculam section*/
+.curriculam{
+    background-image: url("../assets/bg.png");
+}
+.curriculam h2{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 80px;
 
+}
+.boundary{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.bound{
+    max-width: 367px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.05);
+}
+.color1{
+    background: linear-gradient(to bottom, #DEF5FF 0%, #ffffff 40%);
+}
+.color2{
+    background: linear-gradient(to bottom, #FFF4DC 0%, #ffffff 40%);
+}
+.color3{
+    background: linear-gradient(to bottom, #F2E8FF 0%, #ffffff 40%);
+}
+.bound h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.bound p{
+    font-size: 1rem;
+    font-weight: medium;
+    margin-bottom: 33px;
+}
+.scroll-bar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.scroll{
+    height: 60px;
+    width: 60px;
+    background-color: #FEA301;
+    border-radius: 50%;
+    position: relative;
+    align-items: center;
+}
+.scroll i{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: white;    
+}
 
 /*Responsive for mobile */
 
 @media screen and (max-width: 576px) {
-     .menu-container{
+    .menu-container{
         display: none;
      }  
      .header-logo h3{
@@ -119,10 +184,12 @@ hr.line{
      }
      .btn-container i{
         display: inline;
+        margin-right: 20px; 
      }
      hr.line{
         display: block;    
      } 
+ 
      .header-description{
         flex-direction: column-reverse;
         align-items: center;
@@ -133,4 +200,16 @@ hr.line{
         margin-right: 10px;
         margin-top: 20px;
      }
-}
+     .boundary{
+        flex-direction: column;
+        align-items: center; 
+        row-gap: 16px;
+     }
+     .bound{
+        margin-right: 16px;
+        margin-left: 16px;
+     }
+     .scroll-bar{
+        display: none;
+     }
+} 

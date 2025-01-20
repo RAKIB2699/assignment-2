@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+.quicksand-normal {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.normal{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+/*header nav-bar section*/
+.btn-container i{
+    display: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    align-items: center;
+}   
+.header-logo{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.header-logo h3{
+    font-size: 32px;
+    font-weight: 700;
+}
+.menu-container ul{
+    display: flex;
+    gap: 32px;
+}
+.menu-container ul li{
+    list-style-type: none;
+    gap: 32px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.orange{
+    color: #FEA301;
+}
+.skyblue{
+    color: #01ACFD;
+}
+.menu3{
+    color: rgba(5, 212, 223, 1);
+}
+.menu4{
+    color: rgba(93, 88, 239, 1);
+}
+.btn{
+    width: 197px;
+    height: 50px;
+    background-color: #FEA301;
+    border-radius: 12px;
+    border: none;
+    border: none;
+    color: white;
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
+hr.line{
+    border: 0.5px solid #FEA301;
+    display: none; 
+}
+/*header-description addes*/
+.header-description{
+    display: flex;
+    justify-content: space-between;
+}
+.description{
+    max-width: 640px;
+    margin-top: 122px;
+}
+.description h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.description p{
+    font-size: 1.25rem;
+    font-weight: regular;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.des-btn{
+    padding: 10px 47px;
+    background-color: black;
+}
+.header-image{
+    max-width: 468px;
+}
+.header-image img{
+    width: 100%;
+}
+
+
+/*Responsive for mobile */
+
+@media screen and (max-width: 576px) {
+     .menu-container{
+        display: none;
+     }  
+     .header-logo h3{
+        display: none;
+     }  
+     .nav-btn{
+        display: none;
+     }
+     .btn-container i{
+        display: inline;
+     }
+     hr.line{
+        display: block;    
+     } 
+     .header-description{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center; 
+     }
+     .description{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+     }
+}

@@ -21,7 +21,7 @@
 
 /*header nav-bar section*/
 .btn-container i {
-    display: none;
+    display: none; 
 }
 
 .nav {
@@ -145,7 +145,7 @@ hr.line {
 
 .boundary {
     display: flex;
-    /* gap: 28px; */
+    gap: 28px;
     justify-content: space-between;
 
 }
@@ -408,7 +408,7 @@ hr.line {
 
     .btn-container i {
         display: inline;
-        margin-right: 20px;
+        /* margin-right: 16px; */
     }
 
     hr.line {
@@ -422,9 +422,9 @@ hr.line {
 
     }
     .header-image img{
-        margin-left: 8px;
-        margin-right: 8px;
-        width: calc(100% - 16px);
+        margin-left: 10px;
+        margin-right: 10px;
+        width: calc(100% - 20px);
     }
 
     .description {
@@ -440,8 +440,9 @@ hr.line {
     }
 
     .bound {
-        margin-right: 1%;
-        margin-left: 1%;
+        margin-right: 8px;
+        margin-left: 8px;
+        width: calc(100% - 16px);
     }
 
     .scroll-bar {

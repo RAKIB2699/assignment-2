@@ -23,7 +23,9 @@
 .btn-container i {
     display: none; 
 }
-
+header{
+    margin: 0 8%;
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -36,6 +38,7 @@
     display: flex;
     gap: 15px;
     align-items: center;
+   
 }
 
 .header-logo h3 {
@@ -84,8 +87,7 @@
     font-weight: 500;
 }
 
-hr.line {
-    border: 0.5px solid #FEA301;
+.line {
     display: none;
 }
 
@@ -239,37 +241,18 @@ hr.line {
     color: white;
     border: none;
     font-size: 0.9rem;
-    position: absolute;
-    padding: 0.5%;
-    transform: translateY(-50%);
-    margin-left: 2%;
+    padding: 10px 16px;
+    transform: translateY(calc(-50% - 3px));
+    margin-left: 24px;
 
 }
 
-.card2 h4{
+.card-details h4{
     font-size: 1rem;
-    font-weight: bold;
-    max-width: 214px; 
-    margin: 33px 38px 28px 38px; 
+    font-weight: bold; 
+    margin-left: 24px; 
+    margin-bottom: 24px;
 } 
-.card3 h4{
-    font-size: 1rem;
-    font-weight: bold;
-    max-width: 214px; 
-    margin: 33px 38px 28px 38px; 
-}
-.card4 h4{
-    font-size: 1rem;
-    font-weight: bold;
-    max-width: 214px; 
-    margin: 33px 38px 28px 38px; 
-}
-.card5 h4{
-    font-size: 1rem;
-    font-weight: bold;
-    max-width: 214px; 
-    margin: 33px 38px 28px 38px;  
-}
 
 .card-details img {
     width: 100%;
@@ -300,8 +283,7 @@ hr.line {
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 19px;
-    column-gap: 19px;
+    gap: 20px;
 }
 
 .card1 {
@@ -326,21 +308,35 @@ hr.line {
     color: white;
     font-size: 0.8rem;
     font-weight: medium;
-    padding: 15px;
+    padding: 10px 16px;
     border: none;
-    transform: translate(38px,-30px);
+    transform: translateY(calc(-50% - 3px) );
+    margin-left: 38px;
 }
-
+.card-details-lg{
+    padding-bottom: 38px;
+}
 .card1 h4 {
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 60px 99px 51px 38px;
+    margin-left: 38px;
+    margin-right: 38px;
 }
 
 .card1 p {
     font-size: 1rem;
     font-weight: medium;
-    padding: 0px 68px 34px 38px;
+    margin-left: 38px;
+    margin-right: 38px;
+    margin-top: 24px;
+}
+.mark{
+    /* max-height: 400px; */
+    max-width: 1440px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: orange;
+    margin-bottom: 0px;
 }
 /*footer section */
 .footer-section{
@@ -394,10 +390,22 @@ hr.line {
 /*Responsive for mobile */
 
 @media screen and (max-width: 576px) {
+    .normal{
+        margin: 0px;
+    }
+    header{
+        margin: 0 16px;
+    }
+    .curriculam, .story{
+        padding: 0 16px;
+    }
     .menu-container {
         display: none;
     }
-
+    .header-logo img{
+        max-width: 41px;
+    }
+     
     .header-logo h3 {
         display: none;
     }
@@ -405,14 +413,21 @@ hr.line {
     .nav-btn {
         display: none;
     }
-
+    .nav{
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .line{
+        display: block;
+        width: calc(100% + 32px);
+        margin-top: 16px;
+        margin-left: -16px;
+        border: 0;
+        height: 1px;
+        background: #fea10163;
+    }
     .btn-container i {
         display: inline;
-        /* margin-right: 16px; */
-    }
-
-    hr.line {
-        display: block;
     }
 
     .header-description {
@@ -422,17 +437,15 @@ hr.line {
 
     }
     .header-image img{
-        margin-left: 10px;
-        margin-right: 10px;
-        width: calc(100% - 20px);
+        width: 100%;
     }
 
     .description {
-        margin-left: 10px;
-        margin-right: 10px;
         margin-top: 20px;
     }
-
+.description h1{
+    font-size: 2.5rem;
+}
     .boundary {
         flex-direction: column;
         align-items: center;
@@ -454,11 +467,22 @@ hr.line {
     }
 
     .card-container {
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 11px;
 
     }
     .card-details{
-       width: 48%;
+        padding-bottom: 16px;
+    }
+    .card-details button, .card-details h4{
+        font-size: 10px;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .card-details button{
+        padding: 6px 10px;
     }
     .footer-content{
         flex-direction: column;
@@ -466,6 +490,5 @@ hr.line {
     }
     .footer-menu{
         margin-top: 30px;
-    }
-   
+    } 
 }
